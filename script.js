@@ -1,10 +1,7 @@
-document.getElementById('menuToggle').addEventListener('click', () => {
-  document.getElementById('mobileMenu').classList.add('active');
-});
-
-document.getElementById('closeMenu').addEventListener('click', () => {
-  document.getElementById('mobileMenu').classList.remove('active');
-});
+     function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
 
 
 const scrollContainer = document.getElementById("scrollContainer");
@@ -17,3 +14,6 @@ const scrollContainer = document.getElementById("scrollContainer");
       if (dots[index]) dots[index].classList.add("active");
     });
   }
+
+
+ 
