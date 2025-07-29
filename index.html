@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,57 +14,56 @@
 
 <body>
 
-  <div class="desktop-navbar">
-    <div class="desktop-logo">
+  <!-- Mobile Navbar -->
+  <div class="mobile-navbar">
+    <div class="mobile-logo">
       <img src="images/Logo.svg" alt="Logo" />
-      <span class="fw-bold fs-5">Craft My Plate</span>
     </div>
-
-    <div class="desktop-nav-links">
-      <a href="#" class="active">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Work with Us</a>
-      <a href="#">Blogs</a>
-      <a href="#">Contact Us</a>
-    </div>
-
-    <div class="desktop-contact">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-      <span>+91 8988988889</span>
-    </div>
-  </div>
-
-  <div class="mobile-header d-lg-none">
-    <div class="d-flex align-items-center gap-2">
-      <img src="images/Logo.svg" alt="Logo" />
-      <span class="fw-bold fs-5">Craft My Plate</span>
-    </div>
-    <button class="btn p-0 border-0" id="menuToggle">
-      <i class="fas fa-bars fa-lg"></i>
+    <button class="btn" onclick="toggleMenu()">
+      <i class="fas fa-bars fs-4"></i>
     </button>
   </div>
 
-  <div class="mobile-menu-overlay d-lg-none" id="mobileMenu">
-    <div class="close-btn" id="closeMenu">
-      <i class="fas fa-times"></i>
-    </div>
-
+  <!-- Full Screen Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="close-btn" onclick="toggleMenu()">&times;</div>
     <a href="#" class="active">Home</a>
     <a href="#">About Us</a>
     <a href="#">Blogs</a>
     <a href="#">Work with Us <i class="fas fa-caret-down"></i></a>
 
-    <div class="social-icons mt-4">
+    <div class="social-icons mt-3">
       <i class="fab fa-whatsapp"></i>
       <i class="fab fa-instagram"></i>
       <i class="fab fa-facebook-f"></i>
     </div>
 
-    <div class="call-text mt-3">Give Us a Call</div>
-    <div class="phone-number mt-1"><span>+91</span> 8988988889</div>
+    <div class="call mt-4">Give Us a Call</div>
+    <div class="phone-number"><span>+91</span> 8988988889</div>
 
-    <div class="terms-text">Terms and Condition</div>
+    <div class="terms">Terms and Condition</div>
   </div>
+
+  <!-- Desktop Navbar -->
+  <nav class="navbar   navbar-lg d-none d-lg-flex justify-content-between align-items-center" style="padding: 1% 5%;">
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/Logo.svg" alt="Logo">
+        <span class="fw-bold fs-5">Craft My Plate</span>
+      </a>
+    </div>
+    <div class="d-flex align-items-center gap-4">
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">About Us</a>
+      <a href="#" class="nav-link">Work with Us</a>
+      <a href="#" class="nav-link">Blogs</a>
+      <a href="#" class="nav-link">Contact Us</a>
+      <div class="whatsapp-contact">
+        <i class="fab fa-whatsapp text-success fs-5"></i>
+        <span>+91 8988988889</span>
+      </div>
+    </div>
+  </nav>
 
   <section class="banner-section">
     <div class="container">
@@ -698,13 +697,12 @@
  <footer class="footer-section pt-4 border-top mt-5">
   <div class="container">
     <div class="row align-items-center text-center text-md-start">
-      <!-- App Store Buttons -->
+ 
       <div class="col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start gap-2">
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" width="140">
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" width="150">
       </div>
-
-      <!-- Navigation Links -->
+ 
       <div class="col-md-4 mb-3 mb-md-0 d-flex justify-content-center gap-3 flex-wrap">
         <a href="#" class="footer-link">Home</a>
         <a href="#" class="footer-link">Services</a>
@@ -712,16 +710,14 @@
         <a href="#" class="footer-link fw-bold">Contact Us</a>
         <a href="#" class="footer-link">Menu</a>
       </div>
-
-      <!-- Social Icons -->
+ 
       <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
         <a href="#" class="text-pink fs-5"><i class="fab fa-whatsapp"></i></a>
         <a href="#" class="text-pink fs-5"><i class="fab fa-instagram"></i></a>
         <a href="#" class="text-pink fs-5"><i class="fab fa-facebook-f"></i></a>
       </div>
     </div>
-
-    <!-- Bottom Text -->
+ 
     <div class="row mt-3">
       <div class="col-12">
         <small>©2024 Craft My Plate. All rights reserved</small>
