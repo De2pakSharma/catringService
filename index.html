@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Capriola&family=Lexend&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Catering Service</title>
+</head>
+
+<body>
+
+  <div class="desktop-navbar">
+    <div class="desktop-logo">
+      <img src="images/Logo.svg" alt="Logo" />
+      <span class="fw-bold fs-5">Craft My Plate</span>
+    </div>
+
+    <div class="desktop-nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Work with Us</a>
+      <a href="#">Blogs</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="desktop-contact">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+      <span>+91 8988988889</span>
+    </div>
+  </div>
+
+  <div class="mobile-header d-lg-none">
+    <div class="d-flex align-items-center gap-2">
+      <img src="images/Logo.svg" alt="Logo" />
+      <span class="fw-bold fs-5">Craft My Plate</span>
+    </div>
+    <button class="btn p-0 border-0" id="menuToggle">
+      <i class="fas fa-bars fa-lg"></i>
+    </button>
+  </div>
+
+  <div class="mobile-menu-overlay d-lg-none" id="mobileMenu">
+    <div class="close-btn" id="closeMenu">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <a href="#" class="active">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Blogs</a>
+    <a href="#">Work with Us <i class="fas fa-caret-down"></i></a>
+
+    <div class="social-icons mt-4">
+      <i class="fab fa-whatsapp"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-f"></i>
+    </div>
+
+    <div class="call-text mt-3">Give Us a Call</div>
+    <div class="phone-number mt-1"><span>+91</span> 8988988889</div>
+
+    <div class="terms-text">Terms and Condition</div>
+  </div>
+
+  <section class="banner-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="location-text mb-2 text-md-start text-center">
+            <i class="fas fa-map-marker-alt"></i> Currently Serving in
+            <span>HYDERABAD</span>
+          </div>
+
+          <h1 class="main-heading text-md-start text-center">
+            INDIA’S FIRST FOOD CATERING APP
+          </h1>
+
+          <div class="subheading text-md-start text-center">
+            You Customize, We Cater!
+          </div>
+
+          <!-- ✅ Mobile image inserted here: just after subheading -->
+          <div class="d-block d-md-none text-center my-3">
+            <img src="images/image_4.webp" alt="Mobile Banner" class="img-fluid" />
+          </div>
+
+          <p class="description text-md-start text-center">
+            Experience personalized online bulk food catering, where every
+            meal is tailored to your taste and budget. Create a customised
+            culinary journey for birthdays, weddings, parties, and more.
+          </p>
+          <div class="text-md-start text-center">
+            <button class="btn-request-call">
+              <i class="fas fa-phone"></i> Request a Call
+            </button>
+
+            <div class="get-app-text">GET THE APP ON</div>
+
+            <div class="store-buttons d-flex flex-column flex-sm-row justify-content-center justify-content-md-start">
+              <a href="#" class="store-btn">
+                <i class="fab fa-apple"></i> Apple Store
+              </a>
+              <a href="#" class="store-btn">
+                <i class="fab fa-google-play"></i> Play Store
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 position-relative text-center mt-5 mt-md-0 d-none d-md-block">
+          <img src="images/left food.png" alt="Food Dish" class="food-img" />
+          <img src="images/image_4.webp" alt="Phone UI" class="img-fluid phone-img" />
+          <img src="images/Welcomeimg.svg" alt="Elephant" class="elephant-img" />
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container ourservise py-5">
+    <h2 class="text-center mb-5">Our Services</h2>
+
+    <!-- Small Devices (Scroll) -->
+    <div class="scroll-wrapper d-md-none" id="scrollContainer">
+      <div class="scroll-item" style="height: 90%; margin-top: 10%;"  >
+        <div class="service-card green-border short-card">
+          <img src="images/mealbox.png" class="top-img img-fluid" alt="Meal Box" />
+          <div class="icon text-success"><i class="fas fa-utensils"></i></div>
+          <div class="title text-success">Meal Box</div>
+          <div class="subtext">👥 From 10 Guests onwards</div>
+          <div class="description">
+            Our meal box is perfect for any small or big event with a variety of meal options from starters, mains, and
+            dessert etc.
+          </div>
+          <div class="variants">
+            <img src="images/mealbottom.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-item" style="height: 90%; margin-top: 10%;" >
+        <div class="service-card yellow-border short-card">
+          <img src="images/delivery.png" class="top-img img-fluid" alt="Delivery Box" />
+          <div class="icon text-warning"><i class="fas fa-box"></i></div>
+          <div class="title text-warning">Delivery Box</div>
+          <div class="subtext">👥 From 10 - 120 Guests</div>
+          <div class="description">
+            Perfect for your farm-house parties, small gatherings, and get-togethers! Explore a wide range of menu
+            options at unbeatable prices.
+            <br><br><span class="highlight-text">Your go-to for affordable and hassle-free House & Farm-Houses
+              Parties!</span>
+            <br><br><em>(Catering services available on request)</em>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-item" style="height: 90%; margin-top: 10%;" >
+        <div class="service-card pink-border short-card">
+          <img src="images/image_5.png" class="top-img img-fluid mb-5" alt="Catering" style="height: 150px; width: 150px;" />
+          <div class="icon text-danger"><i class="fas fa-concierge-bell"></i></div>
+          <div class="title text-danger">Catering</div>
+          <div class="subtext">👥 From 10 Guests onwards</div>
+          <div class="description">
+            Best for your extravagant events like a wedding!
+            <br><br>Just choose one of our catering menu, get creative and customize it as you want.
+            <br><br>The choices are limitless and the flavours.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dots for small device -->
+    <div class="dot-indicators d-md-none" id="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!-- Larger Screens (Grid) -->
+    <div class="grid-wrapper row g-3 d-none d-md-flex " style="margin-top: 15%;">
+      <div class="col-md-4">
+        <div class="service-card green-border short-card" style="margin-left: 10%;">
+          <img src="images/mealbox.png" class="top-img img-fluid mt-4" alt="Meal Box" />
+          <div class="icon text-success"><i class="fas fa-utensils"></i></div>
+          <div class="title text-success">Meal Box</div>
+          <div class="subtext">👥 From 10 Guests onwards</div>
+          <div class="description">
+            Our meal box is perfect for any small or big event with a variety of meal options from starters, mains, and
+            dessert etc.
+          </div>
+          <div class="variants">
+            <img src="images/mealbottom.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card yellow-border">
+          <img src="images/delivery.png" class="top-img img-fluid" alt="Delivery Box" />
+          <div class="icon text-warning"><i class="fas fa-box"></i></div>
+          <div class="title text-warning">Delivery Box</div>
+          <div class="subtext">👥 From 10 - 120 Guests</div>
+          <div class="description">
+            Perfect for your farm-house parties, small gatherings, and get-togethers! Explore a wide range of menu
+            options at unbeatable prices.
+            <br><br><span class="highlight-text">Your go-to for affordable and hassle-free House & Farm-Houses
+              Parties!</span>
+            <br><br><em>(Catering services available on request)</em>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="service-card pink-border short-card">
+          <img src="images/image_5.png" class="top-img img-fluid" alt="Catering" style="height: auto; width: 200px;"/>
+          <div class="icon text-danger"><i class="fas fa-concierge-bell"></i></div>
+          <div class="title text-danger">Catering</div>
+          <div class="subtext">👥 From 10 Guests onwards</div>
+          <div class="description">
+            Best for your extravagant events like a wedding!
+            <br><br>Just choose one of our catering menu, get creative and customize it as you want.
+            <br><br>The choices are limitless and the flavours.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <h2 class="text-center fw-bold mb-2" style="color: #7027a0; margin-top: -205;">Features</h2>
+    <p class="text-center mb-5 text-muted">
+      Discover handpicked premium features designed to enhance your <br> culinary experience and elevate the quality of
+      services, ensuring that<br> your events are truly exceptional.
+    </p>
+
+
+  <div class="container px-5 features-lg-md d-none d-md-block">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="feature-box">
+          <img src="images/image_12.png" alt="Customizable Menus" class="feature-img">
+          <div>
+            <div class="feature-title">Customizable Menus</div>
+            <p class="feature-text">Customize your menu or meal boxes with a<br> diverse selection of dishes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="feature-box">
+          <img src="images/image_13.png" alt="Dynamic Pricing" class="feature-img">
+          <div>
+            <div class="feature-title">Dynamic pricing</div>
+            <p class="feature-text">Price per plate decreases as the number<br> of guests increases.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="feature-box">
+          <img src="images/image141.png" alt="Personal Order Executive" class="feature-img">
+          <div>
+            <div class="feature-title">Personal Order Executive</div>
+            <p class="feature-text">A single point of contact for all your order <br>details, ensuring personalized<br>
+              service.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="feature-box">
+          <img src="images/image151.png" alt="Order Status" class="feature-img">
+          <div>
+            <div class="feature-title">Order status</div>
+            <p class="feature-text">Receive updates on your order’s <br>status from preparation to delivery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+<div class="container px-4 d-md-none">
+  <div class="row g-4">
+    <div class="col-12">
+      <div class="feature-sm-box">
+        
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            
+            <div class="feature-title-sm">Customizable Menus</div>
+            <p class="feature-text-sm">
+              Tailor your menu with a variety of dishes; pricing adjusts with your selections.
+            </p>
+          </div>
+          <img src="images/image_12.png" alt="Customizable Menus" class="feature-img">
+          <div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+        <div class="feature-sm-box">
+    <div class="d-flex align-items-start">
+      <img src="images/image141.png" alt="Personal Order Executive" class="feature-img me-3" />
+      <div>
+        <div class="feature-title-sm">Personal Order Executive</div>
+        <p class="feature-text-sm">
+          A single point of contact for all your order details, ensuring personalized service.
+        </p>
+      </div>
+    </div>
+  </div>
+    </div>
+
+    <div class="col-12">
+      <div class="feature-sm-box">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <div class="feature-title-sm">Dynamic Pricing</div>
+            <p class="feature-text-sm">
+              Price per plate varies with no. of items in a plate and no. of plates selected.
+            </p>
+          </div>
+          <img src="images/image_13.png" alt="Dynamic Pricing" class="feature-img" />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+       <div class="feature-sm-box">
+    <div class="d-flex align-items-start">
+         <img src="images/image151.png" alt="Order Status" class="feature-img">
+      <div>
+        <div class="feature-title-sm">Personal Order Executive</div>
+        <p class="feature-text-sm">
+          A single point of contact for all your order details, ensuring personalized service.
+        </p>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+  <section class="stats-banner py-4 text-white text-center" style="margin-top: 64px;">
+    <div class="container">
+      <div class="row align-items-center g-4 justify-content-between text-center text-md-start">
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+          <span class="star-icon me-2">✨</span>
+          <h5 class="m-0 fw-bold" style="font-size: 2rem;">
+            Served Over <span class="highlight">40000+</span> Customers
+          </h5>
+        </div>
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center text-md-end">
+          <img src="images/image_15.png" style="width: 22%;">
+          <div class="count fw-semibold fs-5">1,000+</div>
+          <div class="label small">Items</div>
+        </div>
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center text-md-end">
+           <img src="images/image_14.png" style="width: 22%;">
+          <div class="count fw-semibold fs-5">31,000+</div>
+          <div class="label small">Downloads</div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+   <section class="how-it-works-section">
+    <h2 class="how-it-works-title">How It Works</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="step-item">
+          <img src="images/img1.png" alt="Step 1" class="step-img">
+          <div class="step-text">Pick <span class="text-warning">Delivery Box</span>, <span class="text-success">Meal Box</span> or <span class="text-danger">Catering</span></div>
+        </div>
+        <div class="step-item">
+          <img src="images/img22.png" alt="Step 2" class="step-img">
+          <div class="step-text">Add Items and Customize Your Own Menu</div>
+        </div>
+        <div class="step-item">
+          <img src="images/img3.png" alt="Step 3" class="step-img">
+          <div class="step-text">Place Your Order and It's that Simple!!!</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="video-box">
+          <video controls width="100%">
+            <source src="video." type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+<section class="review-section text-center">
+  <h2 class="text-purple fw-bold">Reviews</h2>
+  <p class="text-muted mb-5">Have a look at our customers’ experience on our services and food we provide</p>
+ 
+  <div id="reviewCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+ 
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="review-card">
+            <img src="images/santosh.jpg" class="avatar" alt="Shankar P">
+             <img src="images/Marks.png" style="width:30px; height: 20px; margin: 20px;">
+          <blockquote>
+              Thoroughly impressed by the hospitality & décor they provided at the food section of our event.
+            </blockquote>
+            <div class="name">Shankar P</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="container">
+          <div class="review-card">
+            <img src="images/image_24.jpg" class="avatar" alt="Akshay">
+             <img src="images/Marks.png" style="width:30px; height: 20px; margin: 20px;">
+            <blockquote>
+              CMP team handled our order really well. They maintained hygiene and professionalism.
+            </blockquote>
+            <div class="name">Akshay</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="container">
+          <div class="review-card">
+            <img src="images/akshay.jpg" class="avatar" alt="Santosh">
+             <img src="images/Marks.png" style="width:30px; height: 20px; margin: 20px;">
+      
+            <blockquote>
+             
+              CraftMyPlate made our intimate engagement event a day to remember.
+            </blockquote>
+            <div class="name">Santosh Vempati</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#reviewCarousel" data-bs-slide-to="2"></button>
+    </div>
+  </div>
+
+  <!-- Grid View: Visible only on md+ devices -->
+  <div class="container d-none d-md-block">
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <div class="review-card">
+          <img src="images/santosh.jpg" class="avatar" alt="Shankar P">
+                       <img src="images/Marks.png" style="width:30px; height: 20px; margin: 20px;">
+          <blockquote>
+            Thoroughly impressed by the hospitality & décor they provided at the food section of our event.
+          </blockquote>
+          <div class="name">Shankar P</div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="review-card">
+          <img src="images/akshay.jpg" class="avatar" alt="Akshay">
+                                 <img src="images/Marks.png" style="width:30px; height: 20px; margin: 20px;">
+          <blockquote>
+          
+            CMP team handled our order really well. They maintained hygiene and professionalism.
+          </blockquote>
+          <div class="name">Akshay</div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="review-card">
+          <img src="images/image_24.jpg" class="avatar" alt="Santosh">
+           <img src="images/Marks.png" style="width:30px; height: 20px; margin-bottom: -5%;">
+          <blockquote>
+            <i class="text-purple fs-3 bi bi-quote"></i><br>
+            CraftMyPlate made our intimate engagement event a day to remember.
+          </blockquote>
+          <div class="name">Santosh Vempati</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="work-section">
+  <div class="container">
+    <div class="row align-items-center justify-content-center text-center text-md-start">
+      
+      <!-- Image Column -->
+      <div class="col-md-5 position-relative mb-5 mb-md-0 d-flex justify-content-center">
+        
+        <img src="images/cafeimg.webp" alt="Chef" class="img-fluid work-image position-relative" style="max-width: 70%;">
+      </div>
+
+      <!-- Text Column -->
+      <div class="col-md-6">
+        <h2 class="text-purple fw-bold mb-3">Work with Us</h2>
+        <p class="fw-bold mb-1">BECOME PART OF OUR TEAM</p>
+        <p class="mb-4">Register below to become a partner and start cooking for a wider audience.</p>
+ <button class="btn btn-purple mt-3">Check Eligibility</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<div class="container my-5">
+  <div class="download-banner row align-items-center" style="margin: 10%;">
+ 
+    <div class="col-12 d-md-none text-center mb-4" style="margin-top: -10%;">
+      <img src="images/mobieimage.webp" alt="App Screenshot" class="mockup-img img-fluid" />
+    </div>
+
+ 
+    <div class="col-md-6">
+      <h6 class="text-uppercase fw-bold mb-2">Download the App Now</h6>
+      <h1 class="mb-3">Craft My Plate</h1>
+      <p class="mb-4">
+        Experience personalized online bulk food catering, where every meal is tailored to your taste and budget.
+        Create a customised culinary journey for birthdays, weddings, parties, and more.
+      </p>
+ 
+      <div class="mt-3 d-none d-md-block">
+        <h6 class="text-uppercase fw-bold mb-2">Available On</h6>
+        <a href="#" class="btn-store">
+          <i class="fab fa-apple"></i> Apple Store
+        </a>
+        <a href="#" class="btn-store">
+          <i class="fab fa-google-play"></i> Play Store
+        </a>
+      </div>
+    </div>
+ 
+    <div class="col-md-6 d-none d-md-block position-relative">
+      <img src="images/mobieimage.webp" alt="App Screenshot" class="mockup-img" />
+    </div>
+
+     
+    <div class="col-12 d-md-none text-center mt-3">
+      <h6 class="text-uppercase fw-bold mb-2">Available On</h6>
+      <a href="#" class="btn-store">
+        <i class="fab fa-apple"></i> Apple Store
+      </a>
+      <a href="#" class="btn-store">
+        <i class="fab fa-google-play"></i> Play Store
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="container text-center" style="margin-top: 10%;">
+  <h2 class="mb-4 text-purple fw-bold">Events We Cater!</h2>
+  
+  <div class="d-flex flex-wrap justify-content-center gap-3 pills" style="margin: 2% 5%;">
+
+    <span class="event-pill pink-bg">Birthdays</span>
+    <span class="event-pill yellow-bg">Weddings</span>
+    <span class="event-pill purple-bg">Farmhouse Parties</span>
+    <span class="event-pill pink-bg">Kids Party</span>
+    <span class="event-pill yellow-bg">Sangeet</span>
+    <span class="event-pill purple-bg">Corporate Events</span>
+
+    <span class="event-pill purple-bg">Get Togethers</span>
+    <span class="event-pill yellow-bg">Family Reunion</span>
+    <span class="event-pill purple-bg">Kids Party</span>
+    <span class="event-pill pink-bg">Pool Party</span>
+    <span class="event-pill yellow-bg">Tea Party</span>
+
+    <span class="event-pill pink-bg">Cocktail Party</span>
+    <span class="event-pill purple-bg highlight-pill">and Many More!!!</span>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h5 class="text-purple fw-bold">Recent Blogs</h5>
+    <a href="#" class="text-decoration-none text-dark d-flex align-items-center gap-1">
+      See More <span>&rarr;</span>
+    </a>
+  </div>
+
+  <div class="row g-4" style="margin: 2%; padding: 5%;">
+
+    <!-- Blog Card 1 -->
+    <div class="col-md-6 col-lg-6">
+      <div class="card blog-card shadow-sm">
+        <img src="images/blog1.png" class="card-img-top img-fluid" alt="Blog 1">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">5 Catering services Things to keep in mind while choosing</h6>
+          <p class="text-muted mb-1"><small><i class="bi bi-circle-fill me-2" style="font-size:8px;"></i>May 9, 2024</small></p>
+          <p class="card-text text-muted small">It can be overwhelming to plan any event, whether a...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Card 2 -->
+    <div class="col-md-6 col-lg-6">
+      <div class="card blog-card shadow-sm">
+        <img src="images/blog2.jpg" class="card-img-top img-fluid" alt="Blog 2">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">Catering Services Trends For Weddings In 2024</h6>
+          <p class="text-muted mb-1"><small><i class="bi bi-circle-fill me-2" style="font-size:8px;"></i>March 12, 2024</small></p>
+          <p class="card-text text-muted small">Catering Services trends in 2024, Everyone</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Card 3 -->
+    <div class="col-md-6 col-lg-6">
+      <div class="card blog-card shadow-sm">
+        <img src="images/blog3.webp" class="card-img-top img-fluid" alt="Blog 3">
+        <div class="card-body">
+          <h6 class="card-title fw-bold">Benefits of catering order?</h6>
+          <p class="text-muted mb-1"><small><i class="bi bi-circle-fill me-2" style="font-size:8px;"></i>May 11, 2023</small></p>
+          <p class="card-text text-muted small">Did you know that food catering services aren’t just for…</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+ 
+  <section class="contact-section py-5">
+    <div class="container">
+      <div class="row gy-4 align-items-start">
+     
+        <div class="col-lg-5">
+          <h2 class="fw-bold text-purple mb-3">Contact Us</h2>
+          <p>We’re always here to help you!</p>
+          <div class="mb-3">
+            <i class="fas fa-phone text-purple me-2"></i>
+            <strong>Contact Number</strong><br />
+            <a href="tel:+918988988889" class="text-decoration-none text-dark">+91-8988988889</a>
+          </div>
+          <div class="mb-3">
+            <i class="fas fa-envelope text-purple me-2"></i>
+            <strong>Email</strong><br />
+            <a href="mailto:craftmyplate@gmail.com" class="text-decoration-none text-dark">craftmyplate@gmail.com</a>
+          </div>
+          <div>
+            <i class="fas fa-location-dot text-purple me-2"></i>
+            <strong>Address</strong><br />
+            <p class="mb-0">
+              Plot No. 310, S. No. 66/3, Prashant Hills,<br />
+              Raidurg Hyderabad Pincode, 500032
+            </p>
+          </div>
+        </div>
+
+ 
+        <div class="col-lg-7">
+          <h3 class="fw-bold mb-4">We’d Love To Hear <span class="text-purple">From You!</span></h3>
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control input-purple" placeholder="Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control input-purple" placeholder="Email" required>
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control input-purple" placeholder="Subject" required>
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control input-purple" placeholder="Phone Number" required>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control input-purple" rows="4" placeholder="Message" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-purple px-4">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+ <footer class="footer-section pt-4 border-top mt-5">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+      <!-- App Store Buttons -->
+      <div class="col-md-4 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start gap-2">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" width="140">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" width="150">
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="col-md-4 mb-3 mb-md-0 d-flex justify-content-center gap-3 flex-wrap">
+        <a href="#" class="footer-link">Home</a>
+        <a href="#" class="footer-link">Services</a>
+        <a href="#" class="footer-link">Wedding</a>
+        <a href="#" class="footer-link fw-bold">Contact Us</a>
+        <a href="#" class="footer-link">Menu</a>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
+        <a href="#" class="text-pink fs-5"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="text-pink fs-5"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-pink fs-5"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+
+    <!-- Bottom Text -->
+    <div class="row mt-3">
+      <div class="col-12">
+        <small>©2024 Craft My Plate. All rights reserved</small>
+      </div>
+      <div class="col-12 mt-1 text-end">
+        <a href="#" class="footer-link">Privacy & Policy</a>
+        <a href="#" class="footer-link ms-3">Terms & Condition</a>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
