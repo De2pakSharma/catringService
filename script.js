@@ -15,5 +15,13 @@ const scrollContainer = document.getElementById("scrollContainer");
     });
   }
 
+ 
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.slide-in-left').classList.add('animate');
+    document.querySelector('.slide-in-right').classList.add('animate');
+  });
+   window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.slide-in-left-work').classList.add('animate');
+  });
 
  
