@@ -3,13 +3,45 @@
        padding: 0;
        font-family: "Capriola", "Lexend", sans-serif !important;
      }
-    /* Hide mobile components by default */
+    
     .mobile-navbar,
     .mobile-menu {
       display: none;
     }
+  
+.slide-in-left,
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(150px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
 
-    /* Show mobile navbar and menu on screens below 992px */
+ 
+.slide-in-left {
+  transform: translateX(-150px);
+}
+ 
+.slide-in-left.animate,
+.slide-in-right.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-left-work {
+  opacity: 0;
+  transform: translateX(-150px);
+  transition: all 0.8s ease-in-out;
+}
+
+ 
+.slide-in-left-work.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
     @media (max-width: 768px) {
       .mobile-navbar {
         display: flex;
@@ -598,7 +630,28 @@
      .btn-store:hover {
        background-color: #222;
      }
+     .btn-store:hover {
+  background-color: #030007;  
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(111, 66, 193, 0.5);
+   border: 2px solid #ff6666;
+}
 
+.btn-store:hover i {
+  color: #ffffff;
+}
+
+.store-btn:hover {
+  background-color: #000000;  
+  color: #fff;
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.store-btn:hover i {
+  color: #ffffff;
+}
      .mockup-img {
        max-width: 100%;
        height: auto;
@@ -611,17 +664,26 @@
      }
 
      .event-pill {
-       display: inline-block;
-       padding: 10px 25px;
-       font-weight: 600;
-       border-radius: 50px;
-       font-size: 1rem;
-       color: #4a3c6b;
-       user-select: none;
-       cursor: default;
-       min-width: 130px;
-       text-align: center;
-     }
+  display: inline-block;
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 50px;
+  font-size: 1rem;
+  color: #4a3c6b;
+  background-color: #f3f0fb;
+  user-select: none;
+  cursor: pointer;
+  min-width: 130px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.event-pill:hover {
+  background-color: #551fba; 
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6), 0 0 15px rgba(255, 0, 0, 0.4);
+  transform: scale(1.02);
+}
 
 
      .pink-bg {
@@ -722,7 +784,7 @@
      }
 
      .step-img {
-       max-width: 5rem;
+       max-width: 4rem;
        margin-right: 15px;
      }
 
@@ -761,9 +823,13 @@
        border: none !important;
      }
 
-     .btn-purple:hover {
-       background-color: #4b0a96 !important;
-     }
+     
+.btn-purple:hover {
+  background-color: #5a32a3; 
+  color: #fff;
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(111, 66, 193, 0.4);
+}
 
      .work-section {
        margin-top: -5%;
